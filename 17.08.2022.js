@@ -53,4 +53,19 @@ const loops = ()=>{
     //     i++;
     // }while(i < 4)
 }
-loops()
+// loops()
+
+const getMaxTwoNumber = (num)=>{
+    num = num.toString().split('');
+    num.sort((a,b) =>b-a)
+    num.sort()
+    // return num
+    // for (let i = 0; i < num.length; i++) {
+    //     if(maxNumber < num[i]){
+    //         maxNumberTwo = maxNumber;
+    //         maxNumber = num[i];
+    //     }        
+    // }
+    return [num[0],num[1]]
+}
+console.log(getMaxTwoNumber(45697021))
